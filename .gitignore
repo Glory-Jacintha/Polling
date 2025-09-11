@@ -1,1 +1,17 @@
-"db.sqlite3" 
+# Python
+*.pyc
+__pycache__/
+
+# Django
+db.sqlite3
+/media
+/staticfiles
+
+# Virtual environments
+venv/
+env/
+myweb/
+
+# IDEs
+.vscode/
+.idea/
