@@ -1,7 +1,62 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1 style = 'color: #b8bbd9;'> Hello {{name}}!</h1>
-<h2 style = 'color: #8fb3af;'> You're now at the polling index </h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polling Index</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      height: 35vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #4f7c82;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .card {
+      background-color: #b8e3e9;
+      border-radius: 40px;
+      padding: 20px 40px;
+      margin: 20px;
+      text-align: center;
+      box-shadow: 6px 6px 15px rgba(11, 46, 51, 0.6),
+                  -3px -3px 10px rgba(147, 177, 181, 0.5);
+    }
+
+    .hello {
+      font-family: 'Pacifico', sans-serif;
+      font-size: 2.2rem;
+      color: #0b2e33;
+    }
+
+    .polling {
+      font-family: 'Bangers', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 550;
+      color: #666666;
+      width: 370px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card hello">
+    Hello!
+  </div>
+
+  <div class="card polling">
+    <i>You're now at the polling index</i>
+  </div>
+</body>
+</html>
 
 {% endblock %}
