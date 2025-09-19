@@ -6,16 +6,16 @@ from django.utils import timezone
 
 class Question(models.Model):
     question_text = models.CharField(max_length = 200)
-    publish_date = models.DateTimeField("Published Date")
+    publish_date = models.DateTimeField("Published Date: ")
 
     def __str__(self):
-        return self.question.text
+        return self.question_text
     
     def recently_published(self):
         return self.publish_date >= timezone.now() - datetime.timedelta(days=1)
 
 
-class choice(models.Model):
+class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length = 200)
     votes = models.IntegerField(default = 0)
