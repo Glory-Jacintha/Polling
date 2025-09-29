@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #b8e3e9, rgba(147, 177, 181, 0.5));
+    color: #0b2e33;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #4f7c82;
+    text-shadow: 1px 1px 2px #666666;
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background: rgba(11, 46, 51, 0.6);
+    color: white;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+li:hover {
+    background: #4f7c82;
+    cursor: pointer;
+}
+a {
+    color: #0b2e33;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: #4f7c82;
+}
+fieldset {
+    border: 2px solid #4f7c82;
+    background: rgba(147, 177, 181, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+}
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0b2e33;
+}
+input[type="submit"] {
+    background: #4f7c82;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+input[type="submit"]:hover {
+    background: #0b2e33;
+}
